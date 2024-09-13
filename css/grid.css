@@ -42,6 +42,12 @@
     display: none;
 }
 
+#footer-logo {
+    justify-self: center;
+    width: fit-content;
+    height: 20px;
+}
+
 .icons {
     display: flex;
     justify-self: center;
@@ -137,6 +143,11 @@
     .bottom-menu ul {
         list-style-type: none;
         text-align: left;
+    }
+
+    #footer-logo {
+        justify-self: start;
+        width: 100%;
     }
 
     .icons {
