@@ -20,3 +20,69 @@ p, h1, h2, h3, h4, h5 {
     padding: 10px 0;
     margin-bottom: 20px;
 }
+
+.line {
+    border-bottom: 1px solid black;
+}
+
+.light-gray {
+    background-color: #eaeaea;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.black .box {
+    color: black;
+}
+
+.float-right {
+    float: right;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 40%;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icons .box {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.img-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img1 {
+    width: 60%;
+    height: auto;
+}
+
+.img2 {
+    margin-top: 10px;
+    width: 40%;
+    height: auto;
+}
+
+.img3 {
+    width: 100%;
+    height: auto;
+}
+
+#footer-logo {
+    height: 30px;
+}
+
+.about {
+    height: fit-content;
+}
+
+
