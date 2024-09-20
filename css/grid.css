@@ -24,6 +24,10 @@
     z-index: 1;
 }
 
+#top-menu {
+    display: none;
+}
+
 .flex .box {
     width: 100%;
 }
@@ -124,8 +128,20 @@
         padding: 15px 20px;
     }
 
-    .flex .box {
-        width: 25%;
+    #burger {
+        display: none;
+    }
+
+    #top-menu {
+        grid-row: 1;
+        display: block;
+        margin-top: 25px;
+        justify-self: end;
+    }
+    
+    #top-menu li {
+        display: inline;
+        margin-left: 40px;
     }
 
     #desktop-hidden {
