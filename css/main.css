@@ -25,17 +25,106 @@ p, h1, h2, h3, h4, h5 {
     border-bottom: 1px solid black;
 }
 
+.white {
+    background-color: #ffffff;
+}
+
+.black {
+    background-color: #000000;
+    color: white;
+}
+
 .light-gray {
     background-color: #eaeaea;
 }
 
-.black {
-    background-color: black;
-    color: white;
+.red {
+    background-color: #D0181A;
+}
+
+.dark-gray {
+    background-color: #1D1D1D;
+}
+
+.light-gray {
+    background-color: #F0F0F0;
 }
 
 .black .box {
     color: black;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#header-logo img {
+    width: 180px;
+}
+
+#burger {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#burger img {
+    width: 60px;
+    height: 60px;
+}
+
+#event-title {
+    color: #D0181A;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#event-title span {
+    color: #000000;
+}
+
+#menu-line1 {
+    border-bottom: 2px solid #D0181A;
+    margin-left: 15vw;
+    margin-right: 5vw;
+}
+
+#menu-line2 {
+    border-bottom: 2px solid #000000;
+    margin: 5px 2vw;
+}
+
+#top-menu ul {
+    list-style-type: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ 
+#top-menu li {
+    font-size: 14px;
+}
+
+#top-menu.open li {
+    margin-bottom: 25px;
+}
+
+#top-menu.open {
+    display: block;
+    text-align: center;
+    justify-self: center;
+    margin-top: 30px;
+    margin-bottom: 100vh;
+}
+
+.about {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 30px;
+    width: 180px;
 }
 
 .float-right {
@@ -75,8 +164,4 @@ p, h1, h2, h3, h4, h5 {
 .img3 {
     width: 100%;
     height: auto;
-}
-
-.about {
-    height: fit-content;
 }
