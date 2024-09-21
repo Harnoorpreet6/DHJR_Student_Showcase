@@ -199,3 +199,104 @@ p, h1, h2, h3, h4, h5 {
     width: 35px;
 }
 
+#hero {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.subtitle {
+    color: #D0181A;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subtitle span, .hero-heading, .subtitle2 {
+    color: #000000;
+}
+
+.subtitle2 {
+    font-size: 12pt;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.subtitle2 span {
+    font-weight: bold;
+}
+
+.hero-heading span {
+    color: #D0181A;
+}
+
+.r-line {
+    position: absolute;
+    top: 62%;
+    padding-left: 25vw;
+    margin-left: 10px;
+    line-height: 20px;
+    border-top: 5px solid #D0181A;
+}
+
+.hero-heading {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.paragraph {
+    font-size: 12pt;
+    line-height: 24px;
+}
+
+.save-the-date {
+    height: fit-content;
+    color: #ffffff;
+    display: flex;
+    padding: 10px 20px 0 20px;
+    box-shadow: 5px 5px #000000;
+    gap: 15px;
+}
+
+.save-the-date p:nth-child(1) {
+    width: 40px;
+    font-size: 10pt;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.save-the-date p:nth-child(2) {
+    font-weight: bold;
+    font-size: 22pt;
+    width: 50px;
+    line-height: 35px;
+    border-right: 3px solid #000000;
+}
+
+.save-the-date p:nth-child(3) {
+    font-size: 25pt;
+    font-weight: bold;
+    align-content: center;
+    width: 80px;
+}
+
+.e-info {
+    color: #D0181A;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: bold;
+    border: 1.5px solid #D0181A;
+    padding: 15px 30px;
+    width: 300px;
+    margin-top: 40px;
+}
+
+.img-con {
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
