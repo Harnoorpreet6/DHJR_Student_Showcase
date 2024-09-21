@@ -54,6 +54,10 @@ p, h1, h2, h3, h4, h5 {
     color: black;
 }
 
+.r-hover:hover {
+    color: #D0181A;
+}
+
 #header {
     position: sticky;
     top: 0;
@@ -76,7 +80,6 @@ p, h1, h2, h3, h4, h5 {
 
 #event-title {
     color: #D0181A;
-    font-size: 22px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -99,12 +102,7 @@ p, h1, h2, h3, h4, h5 {
 
 #top-menu ul {
     list-style-type: none;
-    font-weight: bold;
     text-transform: uppercase;
-}
- 
-#top-menu li {
-    font-size: 14px;
 }
 
 #top-menu.open li {
@@ -121,10 +119,6 @@ p, h1, h2, h3, h4, h5 {
 
 .about {
     color: white;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 15px 30px;
-    width: 180px;
 }
 
 .float-right {
@@ -165,3 +159,43 @@ p, h1, h2, h3, h4, h5 {
     width: 100%;
     height: auto;
 }
+
+#footer {
+    padding: 20px 0 40px 0;
+}
+
+.bottom-menu {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.bottom-menu ul {
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.bottom-menu li {
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+#p-info2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    padding: 15px 30px;
+    height: fit-content;
+}
+
+.icons {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.icons img {
+    width: 35px;
+}
+
