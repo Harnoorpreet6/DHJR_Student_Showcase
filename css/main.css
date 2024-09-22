@@ -300,3 +300,83 @@ p, h1, h2, h3, h4, h5 {
     justify-content: center;
 }
 
+#video {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#video p {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#video h3 {
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+#video h3 span {
+    color: #D0181A;
+}
+
+.subtitle-line {
+    padding: 0 15%;
+    margin-top: 5px;
+    border-top: 2px solid #D0181A;
+}
+
+.lined {
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#video-con {
+    height: 300px;
+}
+
+.when-con p, .schedule-con p {
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.when {
+    color: #D0181A;
+    margin: 30px 0 20px 0;
+}
+
+.schedule {
+    color: #ffffff;
+    font-weight: 800;
+    width: 180px;
+    padding: 10px 0;
+}
+
+.schedule-con {
+    border: 3px solid #D0181A;
+    padding: 10px 30px;
+    justify-self: center;
+}
+
+#info h4 {
+    font-weight: 800;
+}
+
+#info h5 {
+    font-size: 16pt;
+    font-weight: 800;
+}
+
+#info span {
+    color: #D0181A;
+}
+
+.info-con p {
+    font-size: 12pt;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
