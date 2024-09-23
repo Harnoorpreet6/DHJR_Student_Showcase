@@ -1,7 +1,14 @@
 const burger = document.querySelector('#burger'),
 menu = document.querySelector('#top-menu'),
 icon = document.querySelector('#top-icon'),
-title = document.querySelector('#event-title');
+title = document.querySelector('#event-title'),
+slides = document.querySelectorAll('.slide'),
+slideCount = slides.length,
+miniatures = document.querySelectorAll('.mini'),
+nextBtn = document.querySelector('#next'),
+prevBtn = document.querySelector('#prev');
+
+let count = 0;
 
 function removeMenu() {
     menu.classList.remove('open');
@@ -36,5 +43,38 @@ function resizeMenu() {
     }
 }
 
+function updateMiniature() {
+    miniatures.forEach(mini => mini.classList.remove('selected'));
+    miniatures[count].classList.add('selected');
+}
+
+function nextSlide() {
+    slides[count].classList.remove('active');
+
+    count++;
+    if (count >= slideCount) {
+        count = 0;
+    }
+  
+    slides[count].classList.add('active');
+    updateMiniature();
+    console.log('slide: ', count);
+}
+
+function previousSlide() {
+    slides[count].classList.remove('active');
+
+    count--;
+    if(count < 0) {
+        count = slideCount - 1;
+    }
+
+    slides[count].classList.add('active');
+    updateMiniature();
+    console.log('slide: ', count);
+}
+
 burger.addEventListener('click', toggleMenu);
 window.addEventListener('resize', resizeMenu);
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', previousSlide);
