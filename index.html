@@ -143,10 +143,27 @@
     <section class="full-width-grid-con center light-gray" id="gallery">
         <h2 class="hidden">Event Gallery</h2>
 
-        <div class="grid-con">
-            <h3 class="col-span-full">Snapshots of this amazing night</h3>
-        
-            <div class="box col-span-full" id="gallery-con">Slider</div>
+        <div class="grid-con" id="gallery-text">
+            <h3 class="col-span-full">SNAPSHOTS OF THIS <span>AMAZING NIGHT.</span></h3>
+        </div>
+    
+        <nav class="col-span-full" id="slider-nav">
+            <button id="prev"><img src="images/arrow.svg"></button>
+            <button id="next"><img src="images/arrow.svg"></button>
+        </nav>
+    
+        <div class="col-span-full" id="miniature">
+            <img class="selected mini" src="images/pic.jpg">
+            <img class="mini" src="images/placeholder.jpg">
+            <img class="mini" src="images/pic.jpg">
+            <img class="mini" src="images/placeholder.jpg">
+        </div>
+    
+        <div class="col-span-full" id="slider">
+            <img class="active slide" src="images/pic.jpg">
+            <img class="slide" src="images/placeholder.jpg">
+            <img class="slide" src="images/pic.jpg">
+            <img class="slide" src="images/placeholder.jpg">
         </div>
     </section>
 
