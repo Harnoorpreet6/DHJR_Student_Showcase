@@ -380,3 +380,86 @@ p, h1, h2, h3, h4, h5 {
     margin-bottom: 20px;
     line-height: 22px;
 }
+
+#gallery {
+    position: relative;
+}
+
+#gallery h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18pt;
+    font-weight: 800;
+    padding: 0 40px;
+}
+
+#gallery span {
+    color: #D0181A;
+}
+
+#slider-nav {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slider-nav button {
+    background: none;
+    border: none;
+}
+
+#slider-nav button img {
+    width: 30px;
+}
+
+#prev {
+    padding-left: 30px;
+}
+
+#next {
+    padding-right: 30px;
+}
+
+#next img {
+    transform: rotate(180deg);
+}
+
+#slider {
+    overflow: hidden;
+    width: 100%;
+    max-height: 600px;
+}
+
+#slider img {
+    height: auto;
+    width: 100%;
+    display: none;
+}
+
+#slider img.active {
+    display: block;
+}
+
+#miniature {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mini {
+    width: 60px;
+    height: auto;
+    padding: 5px;
+}
+
+.mini.selected {
+    border: 5px solid #D0181A;
+    padding: 0px;
+}
