@@ -121,14 +121,6 @@ p, h1, h2, h3, h4, h5 {
     color: white;
 }
 
-.float-right {
-    float: right;
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 40%;
-    padding: 20px;
-}
-
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -322,7 +314,6 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .subtitle-line {
-    padding: 0 15%;
     margin-top: 5px;
     border-top: 2px solid #D0181A;
 }
@@ -331,7 +322,6 @@ p, h1, h2, h3, h4, h5 {
     overflow: hidden;
     display: flex;
     gap: 20px;
-    justify-content: center;
 }
 
 #video-con {
@@ -462,4 +452,74 @@ p, h1, h2, h3, h4, h5 {
 .mini.selected {
     border: 5px solid #D0181A;
     padding: 0px;
+}
+
+#partners h3 {
+    font-size: 18pt;
+    font-weight: 800;
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+#partners span {
+    color: #D0181A;
+}
+
+#partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#project {
+    margin-top: 20px;
+}
+
+#project .lined {
+    font-weight: bold;
+}
+
+#project h3 {
+    font-size: 18pt;
+    margin: 30px 0 20px 0;
+}
+
+#project span {
+    color: #D0181A;
+}
+
+#partner-logos img, #project-logos  {
+    width: 50%;
+}
+
+#project-logos {
+    display: flex;
+}
+
+.project-content h3 {
+    text-align: left;
+    margin: 30px 0 20px 0;
+}
+
+.project-content p {
+    font-size: 12pt;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.boxed {
+    padding: 30px;
+    border: 3px solid #D0181A;
+}
+
+.boxed h4 {
+    font-size: 16pt;
+    color: #D0181A;
+}
+
+.boxed p {
+    margin: 10px 0 20px 10px;
+}
+
+.boxed p:last-of-type {
+    margin-bottom: 0;
 }
