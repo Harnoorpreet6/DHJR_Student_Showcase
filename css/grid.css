@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: auto;
-    padding: 15px 30px;
+    padding: 15px 40px;
     max-width: 1200px;
     z-index: 1;
 }
@@ -27,46 +27,73 @@
 #top-menu {
     display: none;
     justify-self: end;
-    font-size: 11pt;
 } 
 
 #top-menu li {
     font-weight: bold;
 }
 
-#event-title {
-    font-size: 18pt;
+#hero-img-con {
+    height: 300px;
+    align-items: center;
 }
 
-.about {
-    width: 180px;
-    padding: 15px 20px;
-    font-size: 10pt;
+#hero-img-con img {
+    width: 100%;
+    height: auto;
 }
 
-.subtitle {
+#hero-con h3 {
+    font-size: 50pt;
+    line-height: 70px;
+}
+
+.red-line {
+    display: none;
+}
+
+.hero-subtitle:first-of-type {
     margin-top: 320px;
 }
 
-#video h3 {
+#save-the-date, #event-btn {
+    justify-self: center;
+}
+
+#save-the-date {
+    margin-top: 20px;
+}
+
+#event-btn {
+    padding: 20px 50px;
+    margin-top: 40px;
+}
+
+#video-con h3 {
+    font-size: 20pt;
+    line-height: 35px;
+}
+
+#event-info h3 {
     font-size: 18pt;
 }
 
-#info h4 {
-    font-size: 18pt;
-    margin: 20px 0;
-}
-
-#info h4, .text-center {
+#event-info h3, #event-info h4, .when, .schedule {
     text-align: center;
 }
 
 .schedule {
-    margin: 10px auto 20px auto;
+    margin: 30px 0 30px 0;
+    max-width: 500px;
+    justify-self: center;
 }
 
-.schedule-con {
-    margin: 20px 10px;
+.when h4 {
+    margin: 30px 0 20px 0;
+}
+
+.schedule h4 {
+    margin: 0 auto 20px auto;
 }
 
 .flex .box {
@@ -95,43 +122,16 @@
     justify-self: center;
 }
 
-.hero-heading {
-    font-size: 50pt;
-    line-height: 70px;
-}
-
-.img-con {
-    height: 300px;
-    align-items: end;
-}
-
-.img-con img {
-    width: 100%;
-    height: auto;
-}
-
 #p-info2 {
     width: 300px;
     font-size: 10pt;
-}
-
-.save-the-date, .e-info {
-    justify-self: center;
-}
-
-.paragraph {
-    margin-bottom: 30px;
-}
-
-.r-line {
-    display: none;
 }
 
 .subtitle-line {
     padding: 0 15%;
 }
 
-.lined {
+.lined-text {
     justify-content: center;
 }
 
@@ -159,51 +159,55 @@
         padding: 15px 40px;
     }
 
-    #event-title {
-        font-size: 22pt;
-    }
-
-    #top-menu {
-        font-size: 14pt;
-    }
-
-    .about {
-        width: 200px;
-        font-size: 12pt;
-    }
-
-    .img-con {
+    #hero-img-con {
         width: 50%;
         height: 100%;
         left: 50%;
     }
 
-    .img-con img {
+    #hero-img-con img {
         width: auto;
         height: 100%;
     }
 
-    .subtitle {
-        margin-top: 40px;
-    }
-
-    .hero-heading {
+    #hero-con h3 {
         font-size: 60pt;
         line-height: 80px;
     }
 
-    .r-line {
+    .red-line {
         display: inline;
+        padding-left: 150px;
     }
 
-    #video-con {
+    .hero-subtitle:first-of-type {
+        margin-top: 40px;
+    }
+
+    #save-the-date, #event-btn {
+        justify-self: start;
+    }
+    
+    #save-the-date {
+        margin-top: 20px;
+        grid-row: 5;
+    }
+    
+    #event-btn {
+        height: fit-content;
+        width: 75%;
+        padding: 20px 40px;
+    }
+
+    #video-con h3 {
+        font-size: 22pt;
+        line-height: 40px;
+    }
+
+    #video {
         margin: 0 40px;
     }
 
-    #info h4 {
-        text-align: center;
-    }
-    
     .text-center {
         text-align: center;
     }    
@@ -214,18 +218,6 @@
 
     .bottom-menu li, #p-info2 {
         font-size: 12pt;
-    }
-
-    .save-the-date, .e-info {
-        justify-self: start;
-    }
-    
-    .save-the-date {
-        grid-row: 5;
-    }
-
-    .paragraph {
-        margin-bottom: 0;
     }
 
     .m-col-span-full {grid-column: 1 / -1;}
@@ -278,100 +270,74 @@
     #top-menu {
         grid-row: 1;
         display: block;
-        margin-top: 25px;
+        margin-top: 22px;
     }
     
     #top-menu li {
         display: inline;
-        font-size: 14px;
-        font-weight: normal;
+        font-size: 10pt;
+        font-weight: 500;
         margin-left: 20px;
     }
 
-    #top-menu li.about {
+    #top-menu li.red-btn {
         font-weight: bold;
-        margin-left: 40px;
     }
 
-    .img-con {
-        width: 50%;
-        height: 100%;
-        right: 0;
-        top: 0;
-    }
-
-    .img-con img {
-        width: auto;
-        height: 100%;
-    }
-
-    .save-the-date {
+    #save-the-date {
         grid-row: 4;
-        margin-left: 50px;
+        margin-top: 0;
+        margin-left: 55px;
     }
 
-    #video h3 {
-        font-size: 24pt;
-    }    
-
-    #video-con {
+    #video {
         grid-column: 2/3;
     }
+        
+    #event-info h3 {
+        font-size: 26pt;
+    }
 
-    #info h4, .text-center {
+    #event-info h3, #event-info h4, .when {
         text-align: left;
     }
-    
-    .schedule {
+
+    .when h4 {
+        margin: 0 0 20px 0;
+    }
+
+    #event-info .schedule h4 {
         text-align: center;
-        margin: 10px 0 20px 0;
+        margin: 0 0 20px 0;
     }
 
-    .schedule-con {
-        margin-left: 0;
+    .schedule {
+        text-align: left;
     }
 
-    .when-con {
-        margin-left: 30px;
-    }
-
-    #info h4 {
-        font-size: 32pt;
-        margin: 20px 0 30px 0;
+    #info-content {
+        margin-right: 50px;
     }
     
     #menu-line1, #menu-line2 {
         display: none;
     }
 
-    #menu-line1 {
-        border-bottom: 2px solid #000000;
-        margin-left: 15vw;
-        margin-right: 5vw;
-    }
-    
-    #menu-line2 {
-        border-bottom: 2px solid #000000;
-        margin: 5px 2vw;
-    }
-
-    .middle-line {
+    #separator {
         grid-row: 1/3;
         display: flex;
-        margin-left: 50px;
     }
 
     #menu-line3 {
         border-right: 3px solid #000000;
         margin-right: 5px;
         height: 450px;
-        margin-top: 30px;
     }
 
     #menu-line4 {
         border-right: 3px solid #D0181A;
         height: 400px;
-        margin-top: 140px;
+        margin-top: 120px;
     }
 
     .float-right {
@@ -381,7 +347,7 @@
         padding: 20px;
     }
 
-    #project .lined {
+    #project .lined-text {
         justify-content: start;
     }
     
