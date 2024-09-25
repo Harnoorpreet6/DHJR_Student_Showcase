@@ -252,7 +252,6 @@ body {
 
 #event-info h4 {
     font-size: 16pt;
-    font-weight: 800;
 }
 
 #info-content p:last-of-type {
@@ -283,37 +282,43 @@ body {
     padding: 10px 0;
 }
 
+/* Partners */
+
+#partners h3 {
+    margin: 30px 0 20px 0;
+}
+
+#partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Gallery */
+
 #gallery {
     position: relative;
 }
 
 #gallery h3 {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 18pt;
-    font-weight: 800;
-    padding: 0 40px;
+    font-size: 20pt;
+    margin: 30px 0 10px 0;
 }
 
-#gallery span {
-    color: #D0181A;
-}
-
-#slider-nav {
+#arrows {
     position: absolute;
     top: 55%;
     width: 100%;
-    grid-column: 2/3;
     display: flex;
     justify-content: space-between;
 }
 
-#slider-nav button {
+#arrows button {
     background: none;
     border: none;
 }
 
-#slider-nav button img {
+#arrows button img {
     width: 30px;
 }
 
@@ -327,6 +332,26 @@ body {
 
 #next img {
     transform: rotate(180deg);
+}
+
+#miniature {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mini {
+    width: 60px;
+    height: auto;
+    padding: 5px;
+}
+
+.mini.selected {
+    border: 5px solid #D0181A;
+    padding: 0px;
 }
 
 #slider {
@@ -345,94 +370,41 @@ body {
     display: block;
 }
 
-#miniature {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    grid-column: 2/3;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.mini {
-    width: 60px;
-    height: auto;
-    padding: 5px;
-}
-
-.mini.selected {
-    border: 5px solid #D0181A;
-    padding: 0px;
-}
-
-#partners h3 {
-    font-size: 18pt;
-    font-weight: 800;
-    text-align: center;
-    margin: 30px 0 20px 0;
-}
-
-#partners span {
-    color: #D0181A;
-}
-
-#partner-logos {
-    display: flex;
-    flex-wrap: wrap;
-}
+/* Project Info */
 
 #project {
-    margin-top: 20px;
-}
-
-#project .lined {
-    font-weight: bold;
+    margin: 30px 0 20px 0;
 }
 
 #project h3 {
-    font-size: 18pt;
     margin: 30px 0 20px 0;
-}
-
-#project span {
-    color: #D0181A;
-}
-
-#partner-logos img, #project-logos  {
-    width: 50%;
 }
 
 #project-logos {
     display: flex;
+    justify-content: center;
+    justify-self: center;
+    max-width: 200px;
+    gap: 20px;
 }
 
-.project-content h3 {
+#project-logos img {
+    border: 1px solid gray;
+}
+
+#project-content h4 {
+    font-size: 16pt;
     text-align: left;
-    margin: 30px 0 20px 0;
-}
-
-.project-content p {
-    font-size: 12pt;
     margin-bottom: 20px;
-    line-height: 22px;
 }
 
-.boxed {
+.objective {
     padding: 30px;
     border: 3px solid #D0181A;
+    max-width: 500px;
 }
 
-.boxed h4 {
-    font-size: 16pt;
-    color: #D0181A;
-}
-
-.boxed p {
-    margin: 10px 0 20px 10px;
-}
-
-.boxed p:last-of-type {
+.objective p:last-of-type {
     margin-bottom: 0;
 }
 
