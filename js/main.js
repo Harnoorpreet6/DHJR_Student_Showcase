@@ -26,7 +26,7 @@ function toggleMenu() {
             icon.src = 'images/close.svg'; 
             title.innerHTML = 
         
-            `<p>Industry Night <span>2025</span></p>
+            `<p"><span class="red-text">INDUSTRY NIGHT</span> 2025</p>
             <div id="menu-line1"></div>
             <div id="menu-line2"></div>`}
 
@@ -46,6 +46,14 @@ function resizeMenu() {
 function updateMiniature() {
     miniatures.forEach(mini => mini.classList.remove('selected'));
     miniatures[count].classList.add('selected');
+}
+
+function slideSelect(index) {
+    slides[count].classList.remove('active');
+    count = index;
+    slides[count].classList.add('active');
+    updateMiniature();
+    console.log('slide: ', count);
 }
 
 function nextSlide() {
@@ -78,3 +86,4 @@ burger.addEventListener('click', toggleMenu);
 window.addEventListener('resize', resizeMenu);
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', previousSlide);
+miniatures.forEach((mini, index) => mini.addEventListener('click', () => slideSelect(index)));
