@@ -25,7 +25,11 @@
 }
 
 #top-menu {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    height: 100vh;
     justify-self: end;
 } 
 
@@ -288,14 +292,18 @@
         padding: 15px 40px;
     }
 
-    #burger {
+    #burger, #event-title {
         display: none;
     }
 
     #top-menu {
-        grid-row: 1;
+        position: relative;
+        top: 0;
+        right: 0;
+        height: 0;
+        opacity: 1;
         display: block;
-        margin-top: 22px;
+        transition: none;
     }
     
     #top-menu li {

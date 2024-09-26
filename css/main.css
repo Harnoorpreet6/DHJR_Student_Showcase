@@ -64,14 +64,16 @@ body {
 
 /* Header */
 
-#header-con {
+#header {
     position: sticky;
+    position: relative;
     top: 0;
     z-index: 2;
     box-shadow: 1px 0 5px #eaeaea;
+    padding-bottom: 10px;
 }
 
-#header-con .grid-con {
+#header .grid-con {
    padding-bottom: 0;
 }
 
@@ -86,13 +88,19 @@ body {
 #burger img {
     width: 60px;
     height: 60px;
+    transition: transform 0.6s ease-in-out;
+}
+
+#burger img.spin {
+    transform: rotate(180deg);
+
 }
 
 #event-title {
     font-size: 20pt;
     font-weight: bold;
     padding: 0 20px;
-    margin-top: 10px;
+    margin: 20px 0 30px 0;
 }
 
 #menu-line1 {
@@ -109,21 +117,33 @@ body {
     list-style-type: none;
 }
 
-#top-menu.open li {
+#top-menu li {
     margin-bottom: 25px;
 }
 
-#top-menu.open {
-    display: block;
+#top-menu {
+    width: 100%;
     text-align: center;
     justify-self: center;
-    margin-top: 30px;
-    margin-bottom: 100vh;
+    margin-top: 25px;
+}
+
+#top-menu.slideMenu {
+    transition: right .5s ease, opacity .3s ease-in-out;
+}
+
+#top-menu.open {
+    border-top: 1px solid #cccccc;
+    display: block;
+    right: 0;
+    opacity: 1;
 }
 
 .red-btn {
     background-color: #D0181A;
     color: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
     padding: 15px 20px;
     font-size: 12pt;
 }
