@@ -25,12 +25,11 @@
 }
 
 #top-menu {
-    opacity: 0;
     position: absolute;
-    top: 70px;
-    right: -100%;
     height: 100vh;
-    justify-self: end;
+    top: 70px;
+    transform: translateX(100%);
+    opacity: 0;
 } 
 
 #top-menu li {
@@ -299,7 +298,7 @@
     #top-menu {
         position: relative;
         top: 0;
-        right: 0;
+        transform: translateX(0);
         height: 0;
         opacity: 1;
         display: block;
