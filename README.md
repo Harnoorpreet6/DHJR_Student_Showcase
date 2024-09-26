@@ -28,4 +28,4 @@ Jenifer Quelali Evangelista
 Harnoorpreet Kaur
 
 ## License
-MIT
+none
