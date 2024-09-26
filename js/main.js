@@ -13,24 +13,22 @@ let count = 0;
 
 function removeMenu() {
     menu.classList.remove('open');
+    menu.addEventListener('transitionend', () => menu.classList.remove('slideMenu'));
+    icon.addEventListener('transitionend', () => menu.classList.remove('spin'));
     icon.src = 'images/fs-menu.svg';
-    title.innerHTML = '';
 }
     
 function toggleMenu() {
     
     if (window.innerWidth <= 1200) {
+        icon.classList.toggle('spin');
         menu.classList.toggle('open');
+        menu.classList.add('slideMenu');
     
         if (menu.classList.contains('open')) {
             console.log('open mobile menu');
-            icon.src = 'images/close.svg'; 
-            title.innerHTML = 
-        
-            `<p"><span class="red-text">INDUSTRY NIGHT</span> 2025</p>
-            <div id="menu-line1"></div>
-            <div id="menu-line2"></div>`}
-
+            icon.src = 'images/close.svg';
+        }
         else {
             console.log('close mobile menu');
             removeMenu(); }
