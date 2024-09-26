@@ -5,6 +5,8 @@
 body {
     font-family: 'Montserrat';
     color: black;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Pallete */
@@ -64,17 +66,16 @@ body {
 
 /* Header */
 
-#header {
-    position: sticky;
+#header-con {
     position: relative;
-    top: 0;
     z-index: 2;
     box-shadow: 1px 0 5px #eaeaea;
-    padding-bottom: 10px;
 }
 
-#header .grid-con {
-   padding-bottom: 0;
+#header-con .grid-con {
+    padding-bottom: 10px;
+    top: 0;
+    z-index: 2;
 }
 
 #header-logo img {
@@ -129,13 +130,14 @@ body {
 }
 
 #top-menu.slideMenu {
-    transition: right .5s ease, opacity .3s ease-in-out;
+    transition: transform .5s ease, opacity .3s ease-in-out;
 }
 
 #top-menu.open {
+    height: 100vh;
     border-top: 1px solid #cccccc;
     display: block;
-    right: 0;
+    transform: translateX(0);
     opacity: 1;
 }
 
