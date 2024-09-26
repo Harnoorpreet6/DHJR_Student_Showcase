@@ -6,7 +6,8 @@ slides = document.querySelectorAll('.slide'),
 slideCount = slides.length,
 miniatures = document.querySelectorAll('.mini'),
 nextBtn = document.querySelector('#next'),
-prevBtn = document.querySelector('#prev');
+prevBtn = document.querySelector('#prev'),
+player = new Plyr('video');
 
 let count = 0;
 
