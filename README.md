@@ -22,10 +22,7 @@ Just enjoy!
 September 2024
 
 ## Credits
-Dina Bondarchuk
-Rodrigo Nobre do Nascimento
-Jenifer Quelali Evangelista
-Harnoorpreet Kaur
+Dina Bondarchuk, Rodrigo Nobre do Nascimento, Jenifer Quelali Evangelista, Harnoorpreet Kaur
 
 ## License
 none
