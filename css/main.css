@@ -29,6 +29,11 @@ body {
 
 .black {
     background-color: #000000;
+    color: white;
+}
+
+.black .box {
+    color: #000;
 }
 
 .red-text {
