@@ -100,12 +100,21 @@
     margin: 0 auto 20px auto;
 }
 
-#partner-logos {
-    padding: 0 20px;
+#partners {
+    padding-bottom: 30px;
 }
 
-#partner-logos img, #project-logos  {
-    width: 50%;
+.flex-logos {
+    max-width: 600px;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.boxed-logo {
+    height: 150px;
+    width: 150px;
 }
 
 .objective {
@@ -227,14 +236,6 @@
     :root .plyr__controls .plyr__controls__item.plyr__time {
         margin-right: 5%;
     }
-    
-    #partner-logos {
-        padding: 0 30px;
-    }
-
-    #partner-logos img  {
-        width: 33%;
-    }
 
     .text-center {
         text-align: center;
@@ -351,7 +352,7 @@
         margin-right: 50px;
     }
     
-    #menu-line1, #menu-line2 {
+    .menu-line1, .menu-line2 {
         display: none;
     }
 
@@ -360,16 +361,20 @@
         display: flex;
     }
 
-    #menu-line3 {
+    .menu-line3 {
         border-right: 3px solid #000000;
         margin-right: 5px;
         height: 450px;
     }
 
-    #menu-line4 {
+    .menu-line4 {
         border-right: 3px solid #D0181A;
         height: 400px;
         margin-top: 120px;
+    }
+
+    #partners {
+        padding-bottom: 0;
     }
 
     #partners h3 {
@@ -378,14 +383,14 @@
         line-height: 30px;
     }
 
-    #partner-logos img  {
-        width: 15%;
+    #partners .flex-logos {
+        max-width: none;
+        justify-self: end;
     }
-    
-    #partner-logos {
-        padding: 0;
-        justify-content: end;
-        gap: 10px;
+
+    #partners .boxed-logo {
+        height: 100px;
+        width: 100px;
     }
 
     #project .lined-text {
