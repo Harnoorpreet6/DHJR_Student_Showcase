@@ -160,6 +160,18 @@
     justify-content: center;
 }
 
+#finalist .container, #hr-mentions .container {
+    width:100%;
+}
+
+#testimonials .container {
+    width: 100%;
+}
+
+#team-portfolio .container {
+    width:100%;
+}
+
 .col-span-full {grid-column: 1 / -1;}
 
 .col-start-1   {grid-column-start: 1;}
@@ -248,6 +260,19 @@
     .bottom-menu li, #p-info2 {
         font-size: 12pt;
     }
+
+    #finalist .container, #hr-mentions .container {
+        width:30%;
+    }
+
+    #testimonials .container {
+        width: 100%;
+    }
+    
+    #team-portfolio .container {
+        width:47%;
+    }
+
 
     .m-col-span-full {grid-column: 1 / -1;}
     
@@ -452,6 +477,13 @@
 
     #footer-logo {
         justify-self: left;
+    }
+
+    #testimonials .container {
+        width: 30%;
+    }
+    #team-portfolio .container {
+        width:22%;
     }
 
     .l-col-span-full {grid-column: 1 / -1;}
