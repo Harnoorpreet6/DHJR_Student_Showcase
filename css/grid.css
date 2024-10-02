@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: auto;
+    grid-column-gap: 16px;
     padding: 15px 40px;
     max-width: 1200px;
     z-index: 1;
@@ -59,7 +60,7 @@
     margin-top: 320px;
 }
 
-#save-the-date, #event-btn {
+#save-the-date, #event-btn, #info-btn {
     justify-self: center;
 }
 
@@ -67,12 +68,12 @@
     margin-top: 20px;
 }
 
-#event-btn {
+#event-btn, #info-btn {
     padding: 20px 50px;
     margin-top: 40px;
 }
 
-#video h3, #partners h3, #project h3 {
+.h3 {
     text-align: center;
     font-size: 20pt;
     line-height: 35px;
@@ -121,16 +122,33 @@
     margin: 20px auto 40px auto;
 }
 
-.flex .box {
-    width: 100%;
-}
-
-#desktop-img {
-    display: none;
-}
-
 #footer-logo {
     justify-self: center;
+}
+
+.subtitle-line {
+    padding: 0 15%;
+}
+
+.lined-text {
+    justify-content: center;
+}
+
+.flex-cards {
+    justify-content: center;
+}
+
+.project-card, .testimonial-card, .team-card {
+    width: 100%;
+    max-width: 600px;
+}
+
+.team-card {
+    margin-bottom: 20px;
+}
+
+#program-info h3 {
+    text-align: left;
 }
 
 #footer-logo img {
@@ -143,12 +161,11 @@
     font-size: 10pt;
 }
 
-.icons, #p-info2 {
+.icons, #program-btn {
     justify-self: center;
 }
 
-#p-info2 {
-    width: 300px;
+#program-btn {
     font-size: 10pt;
 }
 
@@ -173,6 +190,7 @@
 }
 
 .col-span-full {grid-column: 1 / -1;}
+.col-span-2 {grid-column: span 2;}
 
 .col-start-1   {grid-column-start: 1;}
 .col-start-2   {grid-column-start: 2;}
@@ -230,9 +248,9 @@
         grid-row: 5;
     }
     
-    #event-btn {
+    #event-btn, #info-btn {
         height: fit-content;
-        width: 75%;
+        width: 70%;
         padding: 20px 40px;
     }
 
@@ -249,15 +267,28 @@
         margin-right: 5%;
     }
 
-    .text-center {
-        text-align: center;
-    }
-    
-    .flex .box {
-        width: 50%;
+    #finalist .flex-cards, #hr-mentions .flex-cards, #team-portfolio .flex-cards {
+        justify-content: space-between;
     }
 
-    .bottom-menu li, #p-info2 {
+    .project-card {
+        width: 32%;
+    }
+
+    .testimonial-card {
+        width: 80%;
+    }
+    
+    .team-card {
+        margin-bottom: 40px;
+        width: 48%;
+    }
+
+    #program-info h3 {
+        text-align: center;
+    }
+
+    .bottom-menu li, #program-btn {
         font-size: 12pt;
     }
 
@@ -275,6 +306,7 @@
 
 
     .m-col-span-full {grid-column: 1 / -1;}
+    .m-col-span-4 {grid-column: span 4;}
     
     .m-col-start-1 {grid-column-start: 1;}
     .m-col-start-2 {grid-column-start: 2;}
@@ -418,19 +450,19 @@
         width: 100px;
     }
 
-    #project .lined-text {
+    #project .lined-text, #program-info .lined-text {
         justify-content: start;
     }
     
-    #project .subtitle-line:first-of-type {
+    #project .subtitle-line:first-of-type, #program-info .subtitle-line:first-of-type {
         display: none;
     }
 
-    #project .subtitle-line {
+    #project .subtitle-line, #program-info .subtitle-line {
         padding: 0 35%;
     }
 
-    #project h3 {
+    #project h3, #program-info h3 {
         font-size: 24pt;
         text-align: left;
         line-height: 40px;
@@ -446,12 +478,25 @@
         margin-top: 20px;
     }
 
-    #desktop-hidden {
-        display: none;
+    .flex-cards {
+        justify-content: space-between;
     }
-    
-    #desktop-img {
-        display: flex;
+
+   .testimonial-card {
+        width: 29%;
+    }
+
+    .team-card {
+        width: 24%;
+    }
+
+    #event-btn, #info-btn {
+        justify-self: start;
+        width: 70%;
+    }
+
+    #program-info .grid-con {
+       grid-template-rows: auto 230px 200px auto;
     }
 
     .bottom-menu li {
@@ -465,11 +510,7 @@
         justify-self: end;
     }
 
-    .icons .box:last-child {
-        margin-right: 0;
-    }
-
-    #p-info2 {
+    #program-btn {
         grid-row: 2;
         justify-self: end;
         width: auto;
@@ -487,6 +528,7 @@
     }
 
     .l-col-span-full {grid-column: 1 / -1;}
+    .l-col-span-3 {grid-column: span 3;}
     
     .l-col-start-1 {grid-column-start: 1;}
     .l-col-start-2 {grid-column-start: 2;}
@@ -525,4 +567,5 @@
     .l-row-end-2 {grid-row-end: 2;}
     .l-row-end-3 {grid-row-end: 3;}
     .l-row-end-4 {grid-row-end: 4;}
+    .l-row-end-5 {grid-row-end: 5;}
 }
