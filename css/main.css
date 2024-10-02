@@ -54,6 +54,11 @@ body {
     cursor: pointer;
 }
 
+.button {
+    text-align: center;
+    text-decoration: none;
+}
+
 /* Header */
 
 #header-con {

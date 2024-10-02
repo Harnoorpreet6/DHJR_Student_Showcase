@@ -165,6 +165,10 @@
     justify-self: center;
 }
 
+.icons a {
+    align-self: center;
+}
+
 #program-btn {
     font-size: 10pt;
 }
@@ -506,8 +510,9 @@
 
     .icons {
         grid-row: 2;
-        padding-top: 80px;
         justify-self: end;
+        align-self: end;
+        margin-bottom: 30px;
     }
 
     #program-btn {
