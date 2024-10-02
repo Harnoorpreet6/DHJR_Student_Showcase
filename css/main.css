@@ -29,6 +29,11 @@ body {
 
 .black {
     background-color: #000000;
+    color: white;
+}
+
+.black .box {
+    color: #000;
 }
 
 .red-text {
@@ -546,4 +551,15 @@ body {
 
 .icons img {
     width: 35px;
+}
+.flex-box {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    background-color:#D0181A;
+    padding: 5px;
+    margin: 0 5px 10px 5px; 
 }
