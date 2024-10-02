@@ -686,3 +686,54 @@ body {
     padding: 5px;
     margin: 0 5px 10px 5px; 
 }
+
+/* Interactive */
+
+#top-menu li:hover {
+    color: #D0181A;
+    cursor: pointer;
+}
+
+#top-menu li:hover:last-child {
+    color: #ffffff;
+}
+
+.red-btn:hover {
+    transform: scale(1.02);
+    transition: transform .2s ease-in;
+}
+
+#event-btn:hover, #info-btn:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #D0181A;
+    transition: background-color .2s ease;
+}
+
+.team-card .card-text:hover {
+    cursor: pointer;
+}
+
+.box:hover {
+    color: #D0181A;
+    border-color: #D0181A;
+    cursor: pointer;
+}
+
+#program-btn:hover {
+    color: #D0181A;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color .2s ease;
+}
+
+.bottom-menu a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.icons img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .1s ease;
+}
