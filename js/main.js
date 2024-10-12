@@ -1,13 +1,15 @@
+(() => {
 const burger = document.querySelector('#burger'),
 menu = document.querySelector('#top-menu'),
-icon = document.querySelector('#top-icon'),
-title = document.querySelector('#event-title'),
-slides = document.querySelectorAll('.slide'),
+icon = document.querySelector('#top-icon');
+
+const slides = document.querySelectorAll('.slide'),
 slideCount = slides.length,
 miniatures = document.querySelectorAll('.mini'),
 nextBtn = document.querySelector('#next'),
-prevBtn = document.querySelector('#prev'),
-player = new Plyr('video');
+prevBtn = document.querySelector('#prev');
+
+const player = new Plyr('video');
 
 let count = 0;
 
@@ -83,6 +85,8 @@ function previousSlide() {
 
 burger.addEventListener('click', toggleMenu);
 window.addEventListener('resize', resizeMenu);
+
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', previousSlide);
 miniatures.forEach((mini, index) => mini.addEventListener('click', () => slideSelect(index)));
+})();
