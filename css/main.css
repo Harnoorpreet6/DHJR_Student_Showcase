@@ -480,18 +480,19 @@ body {
 }
 
 #showcase h3, #testimonials h3 {
-    background-color: #D0181A;
     padding: 10px 30px;
     width: fit-content;
     justify-self: center;
+}
+
+#showcase h3:first-of-type {
+    background-color: #D0181A;
 }
 
 .underline {
     text-decoration: underline;
     font-weight: bold;
 }
-
-/* Finalists */
 
 .flex-cards {
     display: flex;
@@ -506,11 +507,6 @@ body {
     width: 100%;
     margin-bottom: 10px;
     border: 1px solid #cccccc;
-}
-
-#finalist h3, #hr-mentions h3 {
-    font-size: 18pt;
-    margin-bottom: 20px;
 }
 
 /* Honorable Mentions */

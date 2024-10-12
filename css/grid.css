@@ -181,8 +181,8 @@
     justify-content: center;
 }
 
-#finalist .container, #hr-mentions .container {
-    width:100%;
+#showcase .container, #hr-mentions .container {
+    width: 100%;
 }
 
 #testimonials .container {
@@ -190,7 +190,7 @@
 }
 
 #team-portfolio .container {
-    width:100%;
+    width: 100%;
 }
 
 .col-span-full {grid-column: 1 / -1;}
@@ -271,7 +271,7 @@
         margin-right: 5%;
     }
 
-    #finalist .flex-cards, #hr-mentions .flex-cards, #team-portfolio .flex-cards {
+    #showcase .flex-cards, #hr-mentions .flex-cards, #team-portfolio .flex-cards {
         justify-content: space-between;
     }
 
@@ -296,8 +296,8 @@
         font-size: 12pt;
     }
 
-    #finalist .container, #hr-mentions .container {
-        width:30%;
+    #showcase .container, #hr-mentions .container {
+        width: 30%;
     }
 
     #testimonials .container {
@@ -307,7 +307,6 @@
     #team-portfolio .container {
         width:47%;
     }
-
 
     .m-col-span-full {grid-column: 1 / -1;}
     .m-col-span-4 {grid-column: span 4;}
