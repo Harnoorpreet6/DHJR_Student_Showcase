@@ -407,11 +407,13 @@ body {
     width: 60px;
     height: auto;
     padding: 5px;
+    transform: scale(0.8);
 }
 
 .mini.selected {
     border: 5px solid #D0181A;
     padding: 0px;
+    transform: scale(1);
 }
 
 #slider {
@@ -428,6 +430,11 @@ body {
 
 #slider img.active {
     display: block;
+    animation: appear 1s ease-in;
+}
+
+#gallery nav {
+    z-index: 2;
 }
 
 /* Project Info */
