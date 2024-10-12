@@ -9,6 +9,9 @@ miniatures = document.querySelectorAll('.mini'),
 nextBtn = document.querySelector('#next'),
 prevBtn = document.querySelector('#prev');
 
+const portfolioCon = document.querySelector('#portfolio-con'),
+testimonialCon = document.querySelector('#testimonial-con');
+
 const player = new Plyr('video');
 
 let count = 0;
@@ -82,6 +85,64 @@ function previousSlide() {
     updateMiniature();
     console.log('slide: ', count);
 }
+
+const portfolios = [
+    { name: "stud1", link: "stud1.com" },
+    { name: "stud2", link: "stud2.com" },
+    { name: "stud3", link: "stud3.com" },
+    { name: "stud4", link: "stud4.com" },
+    { name: "stud5", link: "stud5.com" },
+    { name: "stud6", link: "stud6.com" },
+    { name: "stud7", link: "stud7.com" },
+    { name: "stud8", link: "stud8.com" },
+];
+
+const testimonials = [
+    { name: "Marco de Luca", position: "Program Coordinator", comment: "The work of those students is inspiring to see. Each of them has such a different approach to the same project, which leads to a good variety of results. It's gratifying." },
+    { name: "Jarrod Osterback", position: "Professor", comment: "Personally, I think the students of this year really made good use of my classes. Amazing visual directions and good use of the fundamentals we learned back in the previous terms." },
+    { name: "Robert Haaf", position: "Professor", comment: "Awesome layouts done by students. I really like many of them went far and beyond to make sure their website had a clear structure and good acessibility features" },
+]
+
+portfolios.forEach((portfolio) => {
+    const portfolioDiv = document.createElement("div");
+    portfolioDiv.classList.add("col-span-2", "m-col-span-4", "l-col-span-3", "box", "animated-delay");
+
+    const studentName = document.createElement("p");
+    studentName.classList.add("student-name", "bold");
+    studentName.textContent = portfolio.name;
+
+    const studentWebsite = document.createElement("a");
+    studentWebsite.textContent = portfolio.link;
+    studentWebsite.classList.add("student-website");
+
+    portfolioDiv.appendChild(studentName);
+    portfolioDiv.appendChild(studentWebsite);
+
+    portfolioCon.appendChild(portfolioDiv);
+});
+
+testimonials.forEach((testimonial) => {
+    const testimonialDiv = document.createElement("div");
+    testimonialDiv.classList.add("testimonial-card");
+
+    const personName = document.createElement("p");
+    personName.classList.add("card-title", "bolder");
+    personName.textContent = testimonial.name;
+
+    const positionName = document.createElement("p");
+    positionName.classList.add("card-subtitle", "bold");
+    positionName.textContent = testimonial.position;
+
+    const comment = document.createElement("p");
+    comment.classList.add("card-text");
+    comment.textContent = testimonial.comment;
+
+    testimonialDiv.appendChild(personName);
+    testimonialDiv.appendChild(positionName);
+    testimonialDiv.appendChild(comment);
+
+    testimonialCon.appendChild(testimonialDiv);
+});
 
 burger.addEventListener('click', toggleMenu);
 window.addEventListener('resize', resizeMenu);
