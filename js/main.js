@@ -74,7 +74,6 @@ function slideSelect(index) {
     count = index;
     slides[count].classList.add('active');
     updateMiniature();
-    console.log('slide: ', count);
 }
 
 function nextSlide() {
@@ -87,7 +86,6 @@ function nextSlide() {
   
     slides[count].classList.add('active');
     updateMiniature();
-    console.log('slide: ', count);
 }
 
 function previousSlide() {
@@ -100,7 +98,6 @@ function previousSlide() {
 
     slides[count].classList.add('active');
     updateMiniature();
-    console.log('slide: ', count);
 }
 
 const portfolios = [
@@ -167,4 +164,6 @@ window.addEventListener('resize', resizeMenu);
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', previousSlide);
 miniatures.forEach((mini, index) => mini.addEventListener('click', () => slideSelect(index)));
+miniatures.forEach(mini => mini.addEventListener('click', function() {
+    mini.style.transition = 'transform .3s ease-in'; }));
 })();
