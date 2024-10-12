@@ -12,6 +12,9 @@ prevBtn = document.querySelector('#prev');
 const portfolioCon = document.querySelector('#portfolio-con'),
 testimonialCon = document.querySelector('#testimonial-con');
 
+const container = document.querySelectorAll('.animated'),
+delayedContainer = document.querySelectorAll('.animated-delay');
+
 const player = new Plyr('video');
 
 let count = 0;
@@ -46,6 +49,20 @@ function resizeMenu() {
         removeMenu();
     }
 }
+
+gsap.registerPlugin(ScrollTrigger);
+    
+container.forEach(container => {
+    gsap.fromTo(container, {opacity: 0, y: 80},
+        {opacity: 1, y: 0, duration: 1, ease: 'sine.out',
+            scrollTrigger: {trigger: container, start: 'top center'}
+        });
+});
+
+gsap.fromTo(delayedContainer, {opacity: 0},
+    {opacity: 1, delay: .1, stagger: .3, duration: .5, ease: 'ease', 
+        scrollTrigger: {trigger: delayedContainer, start: 'top center'}
+});
 
 function updateMiniature() {
     miniatures.forEach(mini => mini.classList.remove('selected'));
