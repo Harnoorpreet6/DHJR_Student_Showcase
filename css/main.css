@@ -690,6 +690,15 @@ body {
 
 /* Interactive */
 
+#hero-con {
+    animation: appear 1s ease-in;
+}
+
+@keyframes appear {
+    from {opacity: 0; }
+    to {opacity: 1;}
+}
+
 #top-menu li:hover {
     color: #D0181A;
     cursor: pointer;
