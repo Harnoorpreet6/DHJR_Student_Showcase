@@ -65,8 +65,8 @@ html {
 
 /* Header */
 
+
 #header-con {
-    position: relative;
     z-index: 2;
     box-shadow: 1px 0 5px #eaeaea;
 }
