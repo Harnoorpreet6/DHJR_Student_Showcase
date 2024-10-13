@@ -25,10 +25,6 @@
     z-index: 1;
 }
 
-#header-con {
-    position: fixed;
-}
-
 #top-menu {
     position: absolute;
     height: 100vh;
@@ -354,11 +350,6 @@
         grid-template-columns: repeat(12, minmax(0, 1fr));
         grid-column-gap: 18px;
         padding: 15px 40px;
-    }
-
-    #header-con {
-        position: sticky;
-        top: 0;
     }
 
     #burger, #event-title {
