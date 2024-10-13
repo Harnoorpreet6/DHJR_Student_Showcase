@@ -129,7 +129,7 @@ const portfolios = [
     { name: "Gia Khang Ho", link: "giakhangho.com" },
     { name: "Tanya Mae Huertas", link: "tanyamaehuertas.com" },
     { name: "Wimarsha Heshan", link: "Wimarshaheshan.com" },
-    { name: "Apapat Juntarattanakamol", link: "apapatjuntarattannakamol.com" },
+    { name: "Apapat Juntarattanakamol", link: "apapat.com" },
     { name: "Kelly Kakekagamic", link: "kellykakakagamic.com" },
     { name: "Taylor Khan", link: "taylorkhan.com" },
     { name: "Yi Ting Lai", link: "yitinglai.com" },
