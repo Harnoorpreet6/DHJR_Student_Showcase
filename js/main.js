@@ -101,14 +101,14 @@ function previousSlide() {
 }
 
 const portfolios = [
-    { name: "stud1", link: "stud1.com" },
-    { name: "stud2", link: "stud2.com" },
-    { name: "stud3", link: "stud3.com" },
-    { name: "stud4", link: "stud4.com" },
-    { name: "stud5", link: "stud5.com" },
-    { name: "stud6", link: "stud6.com" },
-    { name: "stud7", link: "stud7.com" },
-    { name: "stud8", link: "stud8.com" },
+    { name: "Sydney Bandarra", link: "sydneybandarra.com" },
+    { name: "Issac Bilyea", link: "issacbilyea.com" },
+    { name: "Bryle Timothy", link: "bryletimothy.com" },
+    { name: "Milana Gabbassova", link: "milanagabbassova.com" },
+    { name: "Bernardo Jr. Macapagal", link: "bernardomacapagal.com" },
+    { name: "Jashan Kumar", link: "jashankumar.com" },
+    { name: "Sheldon Gohetia", link: "sheldongohetia.com" },
+    { name: "Xaviere Hanbury", link: "xavierehanbury.com" },
 ];
 
 const testimonials = [
