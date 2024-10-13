@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Pallete */
 
 .red {
@@ -116,6 +120,11 @@ body {
     margin-bottom: 25px;
 }
 
+#top-menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #top-menu {
     width: 100%;
     text-align: center;
@@ -218,6 +227,7 @@ body {
 #event-btn, #info-btn {
     font-family: inherit;
     background-color: transparent;
+    text-decoration: none;
     border: 2px solid #D0181A;
     margin-bottom: 20px;
 }
@@ -492,13 +502,14 @@ body {
     justify-self: center;
 }
 
-#showcase h3:first-of-type {
+#showcase h3:first-of-type, #testimonials h3 {
     background-color: #D0181A;
 }
 
-.underline {
+#showcase a {
     text-decoration: underline;
     font-weight: bold;
+    color: inherit;
 }
 
 .flex-cards {
@@ -565,6 +576,11 @@ body {
 #team-portfolio .flex-cards {
     margin-top: 20px;
     text-align: center;
+}
+
+.team-card a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .flex-box {
@@ -651,18 +667,23 @@ body {
     padding: 20px 0 40px 0;
 }
 
-.bottom-menu {
+#bottom-menu {
     margin-bottom: 30px;
 }
 
-.bottom-menu ul {
+#bottom-menu ul {
     list-style-type: none;
     color: #ffffff;
 }
 
-.bottom-menu li {
+#bottom-menu li {
     font-weight: 500;
     margin-top: 25px;
+}
+
+#bottom-menu a {
+    color: inherit;
+    text-decoration: none;
 }
 
 #program-btn {
@@ -672,6 +693,7 @@ body {
     border: 1.5px solid #ffffff;
     padding: 20px 30px;
     height: fit-content;
+    text-decoration: none;
 }
 
 .icons {
