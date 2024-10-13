@@ -1,7 +1,9 @@
 (() => {
 const burger = document.querySelector('#burger'),
 menu = document.querySelector('#top-menu'),
-icon = document.querySelector('#top-icon');
+icon = document.querySelector('#top-icon'),
+menuBtns = document.querySelectorAll('#top-menu a'),
+body = document.querySelector('body');
 
 const slides = document.querySelectorAll('.slide'),
 slideCount = slides.length,
@@ -20,6 +22,7 @@ const player = new Plyr('video');
 let count = 0;
 
 function removeMenu() {
+    body.style.overflow = 'auto';
     menu.classList.remove('open');
     menu.addEventListener('transitionend', () => menu.classList.remove('slideMenu'));
     icon.addEventListener('transitionend', () => menu.classList.remove('spin'));
@@ -36,6 +39,7 @@ function toggleMenu() {
         if (menu.classList.contains('open')) {
             console.log('open mobile menu');
             icon.src = 'images/close.svg';
+            body.style.overflow = 'hidden';
         }
         else {
             console.log('close mobile menu');
@@ -222,11 +226,14 @@ testimonials.forEach((testimonial) => {
 });
 
 burger.addEventListener('click', toggleMenu);
+menuBtns.forEach(button => button.addEventListener('click', () => removeMenu()));
 window.addEventListener('resize', resizeMenu);
 
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', previousSlide);
 miniatures.forEach((mini, index) => mini.addEventListener('click', () => slideSelect(index)));
 miniatures.forEach(mini => mini.addEventListener('click', function() {
-    mini.style.transition = 'transform .3s ease-in'; }));
+    mini.style.transition = 'transform .3s ease-in'; 
+}));
+
 })();
