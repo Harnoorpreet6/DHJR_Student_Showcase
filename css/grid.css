@@ -156,7 +156,7 @@
     filter: brightness(100);
 }
 
-.bottom-menu li {
+#bottom-menu li {
     text-align: center;
     font-size: 10pt;
 }
@@ -292,7 +292,7 @@
         text-align: center;
     }
 
-    .bottom-menu li, #program-btn {
+    #bottom-menu li, #program-btn {
         font-size: 12pt;
     }
 
@@ -502,7 +502,7 @@
        grid-template-rows: auto 230px 200px auto;
     }
 
-    .bottom-menu li {
+    #bottom-menu li {
         text-align: left;
         margin-left: 20px;
     }
