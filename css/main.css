@@ -68,6 +68,9 @@ html {
 
 #header-con {
     z-index: 2;
+
+    position: sticky;
+    top: 0;
     box-shadow: 1px 0 5px #eaeaea;
 }
 
