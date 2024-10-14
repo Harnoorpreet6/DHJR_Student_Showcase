@@ -185,7 +185,7 @@
     const testimonials = [
         { name: "Marco de Luca", position: "Program Coordinator", comment: "The work of those students is inspiring to see. Each of them has such a different approach to the same project, which leads to a good variety of results. It's gratifying." },
         { name: "Jarrod Osterback", position: "Professor", comment: "Personally, I think the students of this year really made good use of my classes. Amazing visual directions and good use of the fundamentals we learned back in the previous terms." },
-        { name: "Robert Haaf", position: "Professor", comment: "Awesome layouts done by students. I really like many of them went far and beyond to make sure their website had a clear structure and good acessibility features" },
+        { name: "Robert Haaf", position: "Professor", comment: "Awesome layouts done by students. I really like that many of them went far and beyond to make sure their website had a clear structure and good acessibility features." },
     ]
     
     portfolios.forEach((portfolio) => {
