@@ -22,7 +22,7 @@
         <h1 class="hidden">Welcome to Fanshawe's Industry Night Webpage</h1>
 
         <div class="grid-con">
-            <h2 class="hidden">Header Menu</h2>
+            <h2 class="hidden">Header</h2>
 
             <div class="col-start-1 col-end-3" id="header-logo">
                 <a href="index.html">
@@ -35,7 +35,7 @@
             </div>
 
             <nav class="col-span-full l-col-start-4 l-col-end-13 white" id="top-menu">
-                <h2 class="hidden">Header Menu</h2>
+                <h3 class="hidden">Header Menu Navigation</h3>
 
                 <div class="center-text" id="event-title">
                     <p><span class="red-text">INDUSTRY NIGHT</span> 2025</p>
@@ -61,7 +61,11 @@
         <section class="full-width-grid-con center light-gray animated" id="hero-con">
             <h2 class="hidden">Hero Image</h2>
     
-            <div class="col-span-full" id="hero-img-con"><img src="images/placeholder.jpg" alt="Hero image"></div>
+            <div class="col-span-full" id="hero-img-con">
+                <img class="mobile-img" src="images/HERO_BANNER_MOB.jpg" alt="People looking at a laptop">
+                <img class="tablet-img" src="images/HERO_BANNER_TAB.jpg" alt="People looking at a laptop">
+                <img class="desktop-img" src="images/HERO_BANNER_DESK.jpg" alt="People looking at a laptop">
+            </div>
     
             <div class="grid-con">
                 <p class="col-span-full m-col-start-1 m-col-end-8 hero-subtitle"><span class="red-text">SCHOOL OF MEDIA & DIGITAL ARTS</span> PRESENTS</p>
@@ -183,20 +187,21 @@
                 </div>
 
                 <div id="miniature">
-                    <img class="selected mini" src="images/pic.jpg" alt="Slider miniature 1">
-                    <img class="mini" src="images/placeholder.jpg" alt="Slider miniature 2">
-                    <img class="mini" src="images/pic.jpg" alt="Slider miniature 3">
-                    <img class="mini" src="images/placeholder.jpg" alt="Slider miniature 4">
+                    <img class="selected mini" src="images/EVENT_MOCKUP_MINI_1.jpg" alt="Image preview">
+                    <img class="mini" src="images/EVENT_MOCKUP_MINI_2.jpg" alt="Image preview">
                 </div>
             </nav>
         
             <div class="col-span-full" id="slider">
                 <h3 class="hidden">Slider</h3>
 
-                <img class="active slide" src="images/pic.jpg" alt="Slide 1">
-                <img class="slide" src="images/placeholder.jpg" alt="Slide 2">
-                <img class="slide" src="images/pic.jpg" alt="Slide 3">
-                <img class="slide" src="images/placeholder.jpg" alt="Slide 4">
+                <img class="active slide" sizes="(max-width: 768px) 413px, (max-width: 1199px) 768px, 1200px"
+                srcset="images/EVENT_MOCKUP_MOB_1.jpg 413w, images/EVENT_MOCKUP_TAB_1.jpg 768w, images/EVENT_MOCKUP_DESK_1.jpg 1200w"
+                src="images/EVENT_MOCKUP_DESK_1.jpg" alt="People watching the event">
+
+                <img class="slide" sizes="(max-width: 768px) 413px, (max-width: 1199px) 768px, 1200px"
+                srcset="images/EVENT_MOCKUP_MOB_2.jpg 413w, images/EVENT_MOCKUP_TAB_2.jpg 768w, images/EVENT_MOCKUP_DESK_2.jpg 1200w"
+                src="images/EVENT_MOCKUP__DESK_2.jpg" alt="People listening to a student">
             </div>
         </section>
 
@@ -340,7 +345,9 @@
 
             <div class="col-span-full flex-cards">
                 <div class="team-card">
-                    <img src="images/placeholder.jpg" alt="Team member image">
+                    <img class="mobile-img" src="images/RODRI_COLOR_MOB.jpg" alt="Rodrigo Nascimento's picture">
+                    <img class="tablet-img" src="images/RODRI_COLOR_TAB.jpg" alt="Rodrigo Nascimento's picture">
+                    <img class="desktop-img" src="images/RODRI_COLOR_DESK.jpg" alt="Rodrigo Nascimento's picture">
 
                     <p class="card-title bolder">RODRIGO NASCIMENTO</p>
                     <p class="card-subtitle bold">WEB DESIGNER</p>
@@ -356,7 +363,9 @@
                 </div>
 
                 <div class="team-card">
-                    <img src="images/placeholder.jpg" alt="Team member image">
+                    <img class="mobile-img" src="images/JENIFER_COLOR_MOB.jpg" alt="Jenifer Quelali's picture">
+                    <img class="tablet-img" src="images/JENIFER_COLOR_TAB.jpg" alt="Jenifer Quelali's picture">
+                    <img class="desktop-img" src="images/JENIFER_COLOR_DESK.jpg" alt="Jenifer Quelali's picture">
 
                     <p class="card-title bolder">JENIFER QUELALI</p>
                     <p class="card-subtitle bold">WEB DEVELOPER</p>
@@ -364,7 +373,9 @@
                 </div>
 
                 <div class="team-card">
-                    <img src="images/placeholder.jpg" alt="Team member image">
+                    <img class="mobile-img" src="images/HANOOR_COLOR_MOB.jpg" alt="Hanorpreet Kaur's picture">
+                    <img class="tablet-img" src="images/HANOOR_COLOR_TAB.jpg" alt="Hanorpreet Kaur's picture">
+                    <img class="desktop-img" src="images/HANOOR_COLOR_DESK.jpg" alt="Hanorpreet Kaur's picture">
 
                     <p class="card-title bolder">HARNOORPREET KAUR</p>
                     <p class="card-subtitle bold">DEVELOPMENT ASSISTANT</p>
@@ -397,9 +408,21 @@
             <h3 class="col-span-full m-col-start-2 m-col-end-12 l-col-start-1 l-col-end-6 bolder h3">FANSHAWE'S INTERACTIVE MEDIA DESIGN PROGRAM IS <span class="red-text">MORE THAN JUST KNOWLEDGE</span></h3>
             
             <div class="col-span-full l-col-start-7 col-end-13 l-row-start-2 l-row-end-5 img-flex">
-                <div id="img1"><img src="images/placeholder.jpg" alt="Program image"></div>
-                <div id="img2"><img src="images/placeholder.jpg" alt="Program image"></div>
-                <div id="img3"><img src="images/placeholder.jpg" alt="Program image"></div>
+                <div id="img1">
+                    <img class="mobile-img" src="images/FANSHAWE_IMAGE_1_MOB.jpg" alt="Students talking and sitting on stairs">
+                    <img class="tablet-img" src="images/FANSHAWE_IMAGE_1_TAB.jpg" alt="Students talking and sitting on stairs">
+                    <img class="desktop-img" src="images/FANSHAWE_IMAGE_1_DESK.jpg" alt="Students talking and sitting on stairs">
+                </div>
+                <div id="img2">
+                    <img class="mobile-img" src="images/FANSHAWE_IMAGE_2_MOB.jpg" alt="Students showing their project">
+                    <img class="tablet-img" src="images/FANSHAWE_IMAGE_2_TAB.jpg" alt="Students showing their project">
+                    <img class="desktop-img" src="images/FANSHAWE_IMAGE_2_DESK.jpg" alt="Students showing their project">
+                </div>
+                <div id="img3">
+                    <img class="mobile-img" src="images/FANSHAWE_IMAGE_3_MOB.jpg" alt="Students receiving feedback">
+                    <img class="tablet-img" src="images/FANSHAWE_IMAGE_3_TAB.jpg" alt="Students receiving feedback">
+                    <img class="desktop-img" src="images/FANSHAWE_IMAGE_3_DESK.jpg" alt="Students receiving feedback">
+                </div>
             </div>
     
             <div class="col-span-full l-col-start-1 l-col-end-7 program-description">
@@ -420,6 +443,7 @@
         <h2 class="hidden">Footer</h2>
 
         <div class="grid-con">
+
             <div id="footer-logo" class="col-span-full l-col-start-1 l-col-end-3">
                 <a href="index.html">
                     <img src="images/fs-logo.svg" alt="Fanshawe College logo" class="pointer">
@@ -427,7 +451,7 @@
             </div>
 
             <nav class="col-span-full l-col-start-1 l-col-end-4" id="bottom-menu">
-                <h3 class="hidden">Bottom Menu</h3>
+                <h3 class="hidden">Footer Menu Navigation</h3>
 
                 <ul>
                     <li><a href="#event-info">THE EVENT</a></li>
