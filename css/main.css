@@ -139,6 +139,7 @@ html {
 
 #top-menu.open {
   height: 100vh;
+  width: 100vw;
   border-top: 1px solid #cccccc;
   display: block;
   transform: translateX(0);
@@ -601,11 +602,15 @@ html {
 
 .student-name {
   font-size: 12pt;
+  line-height: 20px;
+  margin-bottom: 5px;
 }
 
 .student-website {
-  margin-top: 10px;
   font-size: 11pt;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .line {
@@ -618,6 +623,11 @@ html {
 }
 
 /* Program Info */
+
+#program-info {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
 
 #program-info h3 {
   margin-bottom: 30px;
