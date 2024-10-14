@@ -525,7 +525,7 @@
    }
 
    #program-info .grid-con {
-   grid-template-rows: auto 230px 200px auto;
+    grid-template-rows: auto 280px 200px auto;
    }
 
    #bottom-menu li {
