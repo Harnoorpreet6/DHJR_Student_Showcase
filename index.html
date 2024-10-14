@@ -22,7 +22,7 @@
         <h1 class="hidden">Welcome to Fanshawe's Industry Night Webpage</h1>
 
         <div class="grid-con">
-            <h2 class="hidden">Header Menu</h2>
+            <h2 class="hidden">Header</h2>
 
             <div class="col-start-1 col-end-3" id="header-logo">
                 <a href="index.html">
@@ -35,7 +35,7 @@
             </div>
 
             <nav class="col-span-full l-col-start-4 l-col-end-13 white" id="top-menu">
-                <h2 class="hidden">Header Menu</h2>
+                <h3 class="hidden">Header Menu Navigation</h3>
 
                 <div class="center-text" id="event-title">
                     <p><span class="red-text">INDUSTRY NIGHT</span> 2025</p>
@@ -45,12 +45,12 @@
                 </div>
 
                 <ul>
-                    <li><a>THE EVENT</a></li>
-                    <li><a>PROJECT</a></li>
-                    <li><a>NOMINEES</a></li>
-                    <li><a>OUR TEAM</a></li>
-                    <li><a>STUDENT PORTFOLIOS</a></li>
-                    <li class="red-btn"><a>PROGRAM INFORMATION</a></li>
+                    <li><a href="#event-info">THE EVENT</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                    <li><a href="#showcase">NOMINEES</a></li>
+                    <li><a href="#team-portfolio">OUR TEAM</a></li>
+                    <li><a href="student-portfolio">STUDENT PORTFOLIOS</a></li>
+                    <li class="red-btn"><a href="#program-info">PROGRAM INFORMATION</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,12 +58,16 @@
 
     <main>
 
-        <section class="full-width-grid-con center light-gray animated" id="hero-con">
+        <section class="full-width-grid-con center light-gray fade" id="hero-con">
             <h2 class="hidden">Hero Image</h2>
     
-            <div class="col-span-full" id="hero-img-con"><img src="images/placeholder.jpg" alt="Hero image"></div>
+            <div class="col-span-full fade" id="hero-img-con">
+                <img class="mobile-img" src="images/HERO_BANNER_MOB.jpg" alt="People looking at a laptop">
+                <img class="tablet-img" src="images/HERO_BANNER_TAB.jpg" alt="People looking at a laptop">
+                <img class="desktop-img" src="images/HERO_BANNER_DESK.jpg" alt="People looking at a laptop">
+            </div>
     
-            <div class="grid-con">
+            <div class="grid-con animated">
                 <p class="col-span-full m-col-start-1 m-col-end-8 hero-subtitle"><span class="red-text">SCHOOL OF MEDIA & DIGITAL ARTS</span> PRESENTS</p>
     
                 <h3 class="col-span-full m-col-start-1 m-col-end-8 bolder">INDUSTRY <span class="red-text">NIGHT</span><span class="red-line"></span></h3>
@@ -79,7 +83,7 @@
                     <p class="bold">2025</p>
                 </div>
                     
-                <button class="col-span-full m-col-start-1 m-col-end-7 bold red-text" id="event-btn">EVENT INFORMATION</button>
+                <a href="#event-info" class="col-span-full m-col-start-1 m-col-end-7 bold red-text center-text" id="event-btn">EVENT INFORMATION</a>
             </div>
         </section>
 
@@ -92,7 +96,7 @@
                 <h3 class="col-span-full m-col-start-2 m-col-end-12 bolder h3">LET'S CELEBRATE <span class="red-text">CREATIVITY, INNOVATION</span> AND <span class="red-text">COLLABORATION.</span></h3>
             </div>
     
-            <div class="col-span-full" id="video-con"><video class="video" src="video/sky.mp4"></video></div>
+            <div class="col-span-full" id="video-con"><video class="video" src="video/video.mp4"></video></div>
         </section>
 
         <section class="full-width-grid-con center white animated" id="event-info">
@@ -103,16 +107,16 @@
                 <div class="col-span-full l-col-start-1 l-col-end-7 l-row-start-1 l-row-end-3" id="info-content">
                     <h3 class="bolder">A NIGHT TO <span class="red-text">REMEMBER</span></h3>
             
-                    <p>Join us for a showcase featuring the work of our IDP3 and UED students, alongside 
+                    <p class="paragraph">Join us for a showcase featuring the work of our IDP3 and UED students, alongside 
                         Spotlight presentations highlighting the Brothers in Arms project.</p>
                         
-                    <p>Experience the talent and dedication of our students as they present their portfolios, 
+                    <p class="paragraph">Experience the talent and dedication of our students as they present their portfolios, 
                         demonstrating their passion and skills across various disciplines.</p>
                         
-                    <p>After the showcase and portfolio viewing, continue the celebration across the street 
+                    <p class="paragraph">After the showcase and portfolio viewing, continue the celebration across the street 
                         at the Chef's Table. Enjoy appetizers and a cash bar while mingling with fellow attendees.</p>
                         
-                    <p>This event is a perfect opportunity to network, reconnect with old friends, and forge new 
+                    <p class="paragraph">This event is a perfect opportunity to network, reconnect with old friends, and forge new 
                         connections. It's not just about admiring talent — it's about actively engaging and giving 
                         back. Your feedback and support will empower these budding professionals to reach new heights 
                         in their careers.</p>
@@ -127,7 +131,7 @@
                 </div>
     
                 <div class="col-span-full l-col-start-8 l-col-end-13 l-row-start-1 l-row-end-2 when">
-                    <h4 class="red-text bolder">WHEN AND WHERE</h4>
+                    <h4 class="red-text bolder h4">WHEN AND WHERE</h4>
     
                     <p>APRIL 24TH, 2024</p>
                     <p>137 DUNDAS ST</p>
@@ -136,7 +140,7 @@
                 </div>
     
                 <div class="col-span-full l-col-start-8 l-col-end-13 l-row-start-2 l-row-end-3 schedule">
-                    <h4 class="bolder">SCHEDULE</h4>
+                    <h4 class="bolder h4">SCHEDULE</h4>
     
                     <p>&#128900; 4:30 PM - 6:00 PM</p>
                     <p>Spotlight Presentations (The Good Foundation Inc. Theatre)</p>
@@ -178,25 +182,26 @@
                 <h4 class="hidden">Slider Navigation</h4>
 
                 <div id="arrows">
-                    <button id="prev"><img src="images/arrow.svg" alt="Left arrow"></button>
-                    <button id="next"><img src="images/arrow.svg" alt="Right arrow"></button>
+                    <button id="prev" class="pointer"><img src="images/arrow.svg" alt="Left arrow"></button>
+                    <button id="next" class="pointer"><img src="images/arrow.svg" alt="Right arrow"></button>
                 </div>
 
                 <div id="miniature">
-                    <img class="selected mini" src="images/pic.jpg" alt="Slider miniature 1">
-                    <img class="mini" src="images/placeholder.jpg" alt="Slider miniature 2">
-                    <img class="mini" src="images/pic.jpg" alt="Slider miniature 3">
-                    <img class="mini" src="images/placeholder.jpg" alt="Slider miniature 4">
+                    <img class="selected mini" src="images/EVENT_MOCKUP_MINI_1.jpg" alt="Image preview">
+                    <img class="mini" src="images/EVENT_MOCKUP_MINI_2.jpg" alt="Image preview">
                 </div>
             </nav>
         
             <div class="col-span-full" id="slider">
                 <h3 class="hidden">Slider</h3>
 
-                <img class="active slide" src="images/pic.jpg" alt="Slide 1">
-                <img class="slide" src="images/placeholder.jpg" alt="Slide 2">
-                <img class="slide" src="images/pic.jpg" alt="Slide 3">
-                <img class="slide" src="images/placeholder.jpg" alt="Slide 4">
+                <img class="active slide" sizes="(max-width: 768px) 413px, (max-width: 1199px) 768px, 1200px"
+                srcset="images/EVENT_MOCKUP_MOB_1.jpg 413w, images/EVENT_MOCKUP_TAB_1.jpg 768w, images/EVENT_MOCKUP_DESK_1.jpg 1200w"
+                src="images/EVENT_MOCKUP_DESK_1.jpg" alt="People watching the event">
+
+                <img class="slide" sizes="(max-width: 768px) 413px, (max-width: 1199px) 768px, 1200px"
+                srcset="images/EVENT_MOCKUP_MOB_2.jpg 413w, images/EVENT_MOCKUP_TAB_2.jpg 768w, images/EVENT_MOCKUP_DESK_2.jpg 1200w"
+                src="images/EVENT_MOCKUP__DESK_2.jpg" alt="People listening to a student">
             </div>
         </section>
 
@@ -215,7 +220,7 @@
     
                 <div class="col-span-full" id="project-content">
                     <div class="objective float-right">
-                        <h4 class="red-text">OBJECTIVES</h4>
+                        <h4 class="red-text h4">OBJECTIVES</h4>
             
                         <p class="paragraph">&#128900; Raise awareness and gather donations for the construction
                             and installation of a stone memorial depicting scenes from the joint
@@ -227,7 +232,7 @@
                             through this commemoration of shared history.</p>
                     </div>
          
-                    <h4 class="space">PROJECT OVERVIEW</h4>
+                    <h4 class="space h4">PROJECT OVERVIEW</h4>
         
                     <p class="paragraph">During World War I, over a million Indian soldiers served in various theaters of 
                         the war, including Europe, Africa, and the Middle East, as part of the British Indian 
@@ -262,10 +267,10 @@
 
             <h3 class="col-span-full bolder h3">STUDENTS THAT MADE A DIFFERENCE</h3>
 
-            <p class="col-span-full paragraph">Explore our candidates and <span class="underline">read the testimonials</span> on their impactful platforms that boosted 
+            <p class="col-span-full description center-text">Explore our candidates and <a href="#testimonials">read the testimonials</a> on their impactful platforms that boosted 
                 engagement and donations for the Brothers in Arms project.</p>
 
-            <h3 class="col-span-full center-text bolder h3">THE FINALISTS</h3>
+            <h4 class="col-span-full center-text bolder h3">THE FINALISTS</h4>
           
             <div class="col-span-full flex-cards">
                 <div class="project-card">
@@ -287,7 +292,7 @@
     </section>
 
     <section class="full-width-grid-con center white animated" id="hr-mentions">
-        <h2 class="hidden">Project - Honorable Mentions</h2>
+        <h2 class="hidden">Showcase - Honorable Mentions</h2>
 
         <div class="grid-con">
             <h3 class="col-span-full center-text bolder h3">HONORABLE MENTIONS</h3>
@@ -315,11 +320,9 @@
         <h2 class="hidden">Client Testimonials</h2>
 
         <div class="grid-con">
-            <h3 class="col-span-full h3">TESTIMONIALS</h3>
+            <h3 class="col-span-full bolder h3">TESTIMONIALS</h3>
 
-            <p class="col-span-full paragraph">Explore our candidates and read the testimonials 
-                    on their impactful platforms that boosted engagement and donations 
-                    for the Brothers in Arms project.</p>
+            <p class="col-span-full description center-text">See what our partners and professors have to say about this exceptional work through their testimonials.</p>
 
             <div class="col-span-full flex-cards" id="testimonial-con">
             </div>
@@ -333,42 +336,50 @@
         <div class="grid-con">
             <p class="col-span-full lined-text"><span class="subtitle-line"></span>OUR TEAM<span class="subtitle-line"></span></p>
 
-            <h3 class="col-span-full h3">MEET THE TEAM BEHIND OUR WEBSITE</h3>
+            <h3 class="col-span-full bolder h3">MEET THE TEAM BEHIND OUR WEBSITE</h3>
 
-            <p class="col-span-full paragraph">A multicultural team with great synergy, competence, and enthusiasm 
+            <p class="col-span-full description center-text">A multicultural team with great synergy, competence, and enthusiasm 
                 for participating in the project.</p>
 
             <div class="col-span-full flex-cards">
                 <div class="team-card">
-                    <img src="images/placeholder.jpg" alt="Team member image">
+                    <img class="mobile-img" src="images/RODRI_COLOR_MOB.jpg" alt="Rodrigo Nascimento's picture">
+                    <img class="tablet-img" src="images/RODRI_COLOR_TAB.jpg" alt="Rodrigo Nascimento's picture">
+                    <img class="desktop-img" src="images/RODRI_COLOR_DESK.jpg" alt="Rodrigo Nascimento's picture">
 
                     <p class="card-title bolder">RODRIGO NASCIMENTO</p>
-                    <p class="card-subtitle bold">WEB DESIGNER</p>
-                    <p class="card-text">RODRIGONASCIMENTO.COM</p>
+                    <p class="card-subtitle">WEB DESIGNER</p>
+                    <a class="card-text"  href="https://rodrigonascimento.com">RODRIGONASCIMENTO.COM</a>
                 </div>
 
                 <div class="team-card">
-                    <img src="images/placeholder.jpg" alt="Team member image">
+                    <img class="mobile-img" src="images/DINA_COLOR_MOB.jpg" alt="Dina Bondarchuk's picture">
+                    <img class="tablet-img" src="images/DINA_COLOR_TAB.jpg" alt="Dina Bondarchuk's picture">
+                    <img class="desktop-img" src="images/DINA_COLOR_DESK.jpg" alt="Dina Bondarchuk's picture">
 
-                    <p class="card-title bolder">DINA BOND</p>
-                    <p class="card-subtitle bold">VIDEO PRODUCER</p>
-                    <p class="card-text">DINABOND.COM</p>
+                    <p class="card-title bolder">DINA BONDARCHUK</p>
+                    <p class="card-subtitle">VIDEO PRODUCER</p>
+                    <a class="card-text"  href="https://dinabond.com">DINABOND.COM</a>
                 </div>
 
                 <div class="team-card">
-                    <img src="images/placeholder.jpg" alt="Team member image">
+                    <img class="mobile-img" src="images/JENIFER_COLOR_MOB.jpg" alt="Jenifer Quelali's picture">
+                    <img class="tablet-img" src="images/JENIFER_COLOR_TAB.jpg" alt="Jenifer Quelali's picture">
+                    <img class="desktop-img" src="images/JENIFER_COLOR_DESK.jpg" alt="Jenifer Quelali's picture">
 
                     <p class="card-title bolder">JENIFER QUELALI</p>
-                    <p class="card-subtitle bold">WEB DEVELOPER</p>
-                    <p class="card-text">JENIFERQUELALI.COM</p>
+                    <p class="card-subtitle">WEB DEVELOPER</p>
+                    <a class="card-text"  href="https://jeniferquelali.com">JENIFERQUELALI.COM</a>
                 </div>
 
                 <div class="team-card">
-                    <img src="images/placeholder.jpg" alt="Team member image">
+                    <img class="mobile-img" src="images/HANOOR_COLOR_MOB.jpg" alt="Hanorpreet Kaur's picture">
+                    <img class="tablet-img" src="images/HANOOR_COLOR_TAB.jpg" alt="Hanorpreet Kaur's picture">
+                    <img class="desktop-img" src="images/HANOOR_COLOR_DESK.jpg" alt="Hanorpreet Kaur's picture">
 
                     <p class="card-title bolder">HARNOORPREET KAUR</p>
-                    <p class="card-subtitle bold">DEVELOPMENT ASSISTANT</p>
-                    <p class="card-text">HARNOORPREETKAUR.COM</p>
+                    <p class="card-subtitle">DEVELOPMENT ASSISTANT</p>
+                    <a class="card-text" href="https://harnoorpreetkaur.com">HARNOORPREETKAUR.COM</a>
                 </div>
             </div>
         </div>
@@ -382,24 +393,36 @@
 
             <h3 class="col-span-full bolder h3">MEET THE WORK OF OUR STUDENTS</h3>
 
-            <p class="col-span-full paragraph">Learn about their skills and get to know our 2025 Class of students up close 
+            <p class="col-span-full description center-text">Learn about their skills and get to know our 2025 Class of students up close 
                 through their portfolios</p>
 
         </div>
     </section>
 
-    <section class="full-width-grid-con center light-gray animated" id="program-info">
+    <section class="full-width-grid-con center light-gray fade" id="program-info">
         <h2 class="hidden">Program Information</h2>
 
-        <div class="grid-con">
+        <div class="grid-con animated">
             <p class="col-span-full l-col-start-1 l-col-end-7 lined-text"><span class="subtitle-line"></span>THE PROGRAM<span class="subtitle-line"></span></p>
 
             <h3 class="col-span-full m-col-start-2 m-col-end-12 l-col-start-1 l-col-end-6 bolder h3">FANSHAWE'S INTERACTIVE MEDIA DESIGN PROGRAM IS <span class="red-text">MORE THAN JUST KNOWLEDGE</span></h3>
             
             <div class="col-span-full l-col-start-7 col-end-13 l-row-start-2 l-row-end-5 img-flex">
-                <div id="img1"><img src="images/placeholder.jpg" alt="Program image"></div>
-                <div id="img2"><img src="images/placeholder.jpg" alt="Program image"></div>
-                <div id="img3"><img src="images/placeholder.jpg" alt="Program image"></div>
+                <div id="img1">
+                    <img class="mobile-img" src="images/FANSHAWE_IMAGE_1_MOB.jpg" alt="Students talking and sitting on stairs">
+                    <img class="tablet-img" src="images/FANSHAWE_IMAGE_1_TAB.jpg" alt="Students talking and sitting on stairs">
+                    <img class="desktop-img" src="images/FANSHAWE_IMAGE_1_DESK.jpg" alt="Students talking and sitting on stairs">
+                </div>
+                <div id="img2">
+                    <img class="mobile-img" src="images/FANSHAWE_IMAGE_2_MOB.jpg" alt="Students showing their project">
+                    <img class="tablet-img" src="images/FANSHAWE_IMAGE_2_TAB.jpg" alt="Students showing their project">
+                    <img class="desktop-img" src="images/FANSHAWE_IMAGE_2_DESK.jpg" alt="Students showing their project">
+                </div>
+                <div id="img3">
+                    <img class="mobile-img" src="images/FANSHAWE_IMAGE_3_MOB.jpg" alt="Students receiving feedback">
+                    <img class="tablet-img" src="images/FANSHAWE_IMAGE_3_TAB.jpg" alt="Students receiving feedback">
+                    <img class="desktop-img" src="images/FANSHAWE_IMAGE_3_DESK.jpg" alt="Students receiving feedback">
+                </div>
             </div>
     
             <div class="col-span-full l-col-start-1 l-col-end-7 program-description">
@@ -420,29 +443,31 @@
         <h2 class="hidden">Footer</h2>
 
         <div class="grid-con">
+
             <div id="footer-logo" class="col-span-full l-col-start-1 l-col-end-3">
                 <a href="index.html">
                     <img src="images/fs-logo.svg" alt="Fanshawe College logo" class="pointer">
                 </a>
             </div>
 
-            <nav class="col-span-full l-col-start-1 l-col-end-4 bottom-menu">
-                <h3 class="hidden">Bottom Menu</h3>
+            <nav class="col-span-full l-col-start-1 l-col-end-4" id="bottom-menu">
+                <h3 class="hidden">Footer Menu Navigation</h3>
 
                 <ul>
-                    <li><a>THE EVENT</a></li>
-                    <li><a>PROJECT</a></li>
-                    <li><a>NOMINEES</a></li>
-                    <li><a>OUR TEAM</a></li>
-                    <li><a>STUDENT PORTFOLIOS</a></li>
+                    <li><a href="#event-info">THE EVENT</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                    <li><a href="#showcase">NOMINEES</a></li>
+                    <li><a href="#team-portfolio">OUR TEAM</a></li>
+                    <li><a href="student-portfolio">STUDENT PORTFOLIOS</a></li>
                 </ul>
             </nav>
 
-           <button class="red col-span-full l-col-start-9 l-col-end-13" id="program-btn">PROGRAM INFORMATION</button>
+           <a href="#program-info" class="red col-span-full l-col-start-9 l-col-end-13" id="program-btn">PROGRAM INFORMATION</a>
            
            <div class="icons col-span-full l-col-start-10 l-col-end-13">
                 <a href="https://www.facebook.com/FanshaweCollege"><img src="images/facebook.svg" alt="Facebook logo"></a>
                 <a href="https://www.instagram.com/fanshawecollege/"><img src="images/instagram.svg" alt="Instagram logo"></a>
+                <a href="https://x.com/fanshawecollege"><img src="images/x.svg" alt="Twitter/X logo"></a>
                 <a href="https://www.youtube.com/user/MyFanshawe"><img src="images/youtube.svg" alt="Youtube logo"></a>
                 <a href="https://www.linkedin.com/school/fanshawe-college"><img src="images/linkedin.svg" alt="LinkedIn logo"></a>
             </div>
