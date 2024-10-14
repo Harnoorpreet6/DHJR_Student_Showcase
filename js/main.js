@@ -180,7 +180,7 @@
         { name: "Thaseekaran Sivaskaran", link: "tsivaskaran.com" },
         { name: "Thi Thanh Thuong Nguyen", link: "tnguyen.com" },
         { name: "Wisdom Utenwojo Okutepa", link: "wmokutepa.com" },
-    ];
+    ]
     
     const testimonials = [
         { name: "Marco de Luca", position: "Program Coordinator", comment: "The work of those students is inspiring to see. Each of them has such a different approach to the same project, which leads to a good variety of results. It's gratifying." },
