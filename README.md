@@ -2,7 +2,7 @@
 
 **Objective:** The goal of this project is to create a mobile first responsive website for Fanshawe College's upcoming Industry Night. Incorporating concepts learned in previous terms, our team created a platform to showcase student portfolios and include information about the event.
 
-![Website Photo](images/pic.jpg)
+![Website Photo](images/readme_picture.png)
 
 ## Installation
 No installation required
