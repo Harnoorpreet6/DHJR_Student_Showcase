@@ -181,7 +181,7 @@
         { name: "Thi Thanh Thuong Nguyen", link: "tnguyen.com" },
         { name: "Wisdom Utenwojo Okutepa", link: "wmokutepa.com" },
     ]
-        
+    
     const testimonials = [
         { name: "Marco de Luca", position: "Program Coordinator", comment: "The work of those students is inspiring to see. Each of them has such a different approach to the same project, which leads to a good variety of results. It's gratifying." },
         { name: "Jarrod Osterback", position: "Professor", comment: "Personally, I think the students of this year really made good use of my classes. Amazing visual directions and good use of the fundamentals we learned back in the previous terms." },
