@@ -25,4 +25,4 @@ September 2024
 Dina Bondarchuk, Rodrigo Nobre do Nascimento, Jenifer Quelali Evangelista, Harnoorpreet Kaur
 
 ## License
-none
+MIT
