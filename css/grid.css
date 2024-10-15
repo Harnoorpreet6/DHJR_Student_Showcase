@@ -393,7 +393,6 @@
 
    #hero-img-con img {
        min-height: 100%;
-       max-height: auto;
        min-width: auto;
        max-width: 50vw;
    }
